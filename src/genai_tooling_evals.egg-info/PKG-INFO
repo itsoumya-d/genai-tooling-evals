@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: genai-tooling-evals
+Version: 1.0.0
+Summary: GenAI platform tooling evaluations: context engineering, RAG lifecycle, LLM provider gateway, MLOps
+Requires-Python: >=3.11
+Requires-Dist: fastapi
+Requires-Dist: pydantic>=2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: httpx; extra == "dev"

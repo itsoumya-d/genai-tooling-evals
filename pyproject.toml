@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genai-tooling-evals"
+version = "1.0.0"
+description = "GenAI platform tooling evaluations: context engineering, RAG lifecycle, LLM provider gateway, MLOps"
+requires-python = ">=3.11"
+dependencies = ["fastapi", "pydantic>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
